@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Factorial Número</h1>
+        <div class="group-container">
+            <div class="group">
+                <label for="num">Número</label>
+                <input  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" id="num">
+            </div>
+            <div class="group">
+                <label for="resultado">Resultado</label>
+                <input disabled type="text" id="resultado">
+            </div>
+        </div>
+        <div class="group">
+            <label for="resultadoNumeros">Resultado Números</label>
+            <textarea disabled id="resultadoNumeros"></textarea>
+        </div>
+        <div class="group-button">
+            <button id="calcular">Calcular</button>
+            <button id="limpiar">Limpiar</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
